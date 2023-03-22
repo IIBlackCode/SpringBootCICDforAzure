@@ -33,15 +33,6 @@ jobs:
         run : |
           cd spring-petclinic # 해당 디렉토리로 이동
           ./gradlew build -x test # Gradle 빌드 실행
-      
-      - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v2
-        
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
-        with:
-          name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
           
       # Azure 인증 추가
       - name: Azure Login
@@ -56,6 +47,15 @@ jobs:
           slot-name: '<your-slot-name>' # optional
           package: ./spring-petclinic/build/libs/*.jar
           # publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+      
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v2
+        with:
+          name: java-app
+          path: '${{ github.workspace }}/target/*.jar'
 
   deploy:
     runs-on: ubuntu-latest
