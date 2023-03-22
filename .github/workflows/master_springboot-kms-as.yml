@@ -30,7 +30,7 @@ jobs:
             
       - name: Build with Gradle
         # run: mvn clean install
-        run : ./gradlew build -x test
+        run : SpringBootCICDforAzure/spring-petclinic/gradlew build -x test
       
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
