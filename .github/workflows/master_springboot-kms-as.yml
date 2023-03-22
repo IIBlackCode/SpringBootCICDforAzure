@@ -36,7 +36,7 @@ jobs:
           
       # Azure 인증 추가
       - name: Azure Login
-        uses: azure/actions/login@v1
+        uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
