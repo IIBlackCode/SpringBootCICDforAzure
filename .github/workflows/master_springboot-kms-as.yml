@@ -25,11 +25,11 @@ jobs:
         run: cd spring-petclinic
         
       - name: Grant execute permission for gradlew
-        run: chmod +x ./spring-petclinic/gradlew
+        run: chmod +x gradlew
       
       - name: Build with Gradle
         # run: mvn clean install
-        run : ./spring-petclinic/gradlew build -x test
+        run : ./gradlew build -x test
       
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
