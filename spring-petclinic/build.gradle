@@ -1,7 +1,3 @@
-jar {
-    destinationDir = file('spring-petclinic')
-}
-
 plugins {
   id 'java'
   id 'org.springframework.boot' version '3.0.4'
@@ -43,4 +39,8 @@ dependencies {
 
 tasks.named('test') {
   useJUnitPlatform()
+}
+
+jar {
+    destinationDir = file('spring-petclinic')
 }
