@@ -76,5 +76,5 @@ jobs:
           app-name: 'springboot-kms-as'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DEE043EF871C4A8799F949DD98B877E9 }}
-          # package: '${{ github.workspace }}/spring-petclinic/build_JAR/spring-petclinic-*.jar'
-          package: '${{ github.workspace }}/spring-petclinic/build_JAR/*.jar'
+          # package: '${{ github.workspace }}/spring-petclinic/build_JAR/*.jar'
+          package: /home/runner/work/SpringBootCICDforAzure/SpringBootCICDforAzure/spring-petclinic/build_JAR/spring-petclinic-3.0.0-plain2.jar
