@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.samples.petclinic.PetClinicIntegrationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-27T08:15:04" hostname="MZC01-MINSEO_KI" time="1.811">
+  <properties/>
+  <testcase name="testFindAll()" classname="org.springframework.samples.petclinic.PetClinicIntegrationTests" time="0.621"/>
+  <testcase name="testOwnerDetails()" classname="org.springframework.samples.petclinic.PetClinicIntegrationTests" time="1.188"/>
+  <system-out><![CDATA[17:14:54.537 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [PetClinicIntegrationTests]: using SpringBootContextLoader
+17:14:54.544 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.springframework.samples.petclinic.PetClinicIntegrationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:14:54.544 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.springframework.samples.petclinic.PetClinicIntegrationTests]: PetClinicIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:14:54.575 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [PetClinicIntegrationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+17:14:54.670 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\USB\Git\SpringBootCICDforAzure\spring-petclinic\build\classes\java\main\org\springframework\samples\petclinic\PetClinicApplication.class]
+17:14:54.676 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.PetClinicIntegrationTests
+17:14:54.803 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [PetClinicIntegrationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+17:14:54.806 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [PetClinicIntegrationTests], class annotated with @DirtiesContext [false] with mode [null]
+17:14:54.821 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class org.springframework.samples.petclinic.PetClinicIntegrationTests
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 3.0.4
+
+
+2023-03-27T17:14:55.157+09:00  INFO 7564 --- [    Test worker] o.s.s.p.PetClinicIntegrationTests        : Starting PetClinicIntegrationTests using Java 17.0.6 with PID 7564 (started by MZC01-MINSEO_KIM89 in D:\USB\Git\SpringBootCICDforAzure\spring-petclinic)
+2023-03-27T17:14:55.159+09:00  INFO 7564 --- [    Test worker] o.s.s.p.PetClinicIntegrationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-03-27T17:14:56.901+09:00  INFO 7564 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-27T17:14:57.034+09:00  INFO 7564 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 2 JPA repository interfaces.
+2023-03-27T17:14:58.153+09:00  INFO 7564 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-03-27T17:14:58.176+09:00  INFO 7564 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-27T17:14:58.178+09:00  INFO 7564 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-27T17:14:58.377+09:00  INFO 7564 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-27T17:14:58.379+09:00  INFO 7564 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3182 ms
+2023-03-27T17:14:58.795+09:00  INFO 7564 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-27T17:14:59.179+09:00  INFO 7564 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:761f206f-1b15-4035-93c0-497fd59c833c user=SA
+2023-03-27T17:14:59.182+09:00  INFO 7564 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-27T17:14:59.453+09:00  INFO 7564 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-27T17:14:59.546+09:00  INFO 7564 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-03-27T17:15:00.180+09:00  INFO 7564 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-27T17:15:01.817+09:00  INFO 7564 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-27T17:15:01.832+09:00  INFO 7564 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27T17:15:04.053+09:00  INFO 7564 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2023-03-27T17:15:04.240+09:00  INFO 7564 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 11880 (http) with context path ''
+2023-03-27T17:15:04.262+09:00  INFO 7564 --- [    Test worker] o.s.s.p.PetClinicIntegrationTests        : Started PetClinicIntegrationTests in 9.412 seconds (process running for 11.137)
+2023-03-27T17:15:05.210+09:00  INFO 7564 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-27T17:15:05.210+09:00  INFO 7564 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-27T17:15:05.212+09:00  INFO 7564 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
