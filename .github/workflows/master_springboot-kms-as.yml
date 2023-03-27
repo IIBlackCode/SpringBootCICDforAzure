@@ -67,7 +67,7 @@ jobs:
       
       # 배포할 파일의 경로를 확인
       - name: Check build artifacts
-        run: ls -R '${{ github.workspace }}/spring-petclinic/build_JAR/
+        run: ls -R '${{ github.workspace }}/spring-petclinic/build_JAR/'
       
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
