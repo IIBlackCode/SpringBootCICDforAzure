@@ -49,7 +49,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: '${{ github.workspace }}/spring-petclinic/build_JAR/*.jar'
+          path: '${{ github.workspace }}/spring-petclinic/build_JAR'
 
   deploy:
     runs-on: ubuntu-latest
@@ -63,7 +63,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: app
-          path: '${{ github.workspace }}/spring-petclinic/build_JAR/*.jar'
+          path: '${{ github.workspace }}/spring-petclinic/build_JAR'
       
       # 배포할 파일의 경로를 확인
       - name: Check build artifacts
