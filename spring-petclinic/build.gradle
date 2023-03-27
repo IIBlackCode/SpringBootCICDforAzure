@@ -42,5 +42,5 @@ tasks.named('test') {
 }
 
 jar {
-    destinationDir = file('spring-petclinic')
+    destinationDir = file('build_JAR')
 }
