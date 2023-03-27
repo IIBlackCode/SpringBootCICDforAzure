@@ -49,7 +49,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: '/spring-petclinic/*.jar'
+          path: '${{ github.workspace }}/spring-petclinic/spring-petclinic/*.jar'
 
   deploy:
     runs-on: ubuntu-latest
@@ -63,7 +63,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: app
-          path: '/spring-petclinic/*.jar'
+          path: '${{ github.workspace }}/spring-petclinic/spring-petclinic/*.jar'
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
