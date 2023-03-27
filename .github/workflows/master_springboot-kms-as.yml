@@ -70,8 +70,8 @@ jobs:
         run: |
          cd ${GITHUB_WORKSPACE}/spring-petclinic/build_JAR/
          pwd
-         ls
-      
+         ls -lR
+          
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
