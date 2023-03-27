@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.253s</div>
+<div class="counter">0.310s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,52 +79,52 @@
 </thead>
 <tr>
 <td class="success">shouldAddNewVisitForPet()</td>
-<td class="success">0.057s</td>
+<td class="success">0.064s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldFindAllPetTypes()</td>
-<td class="success">0.007s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldFindOwnersByLastName()</td>
-<td class="success">0.050s</td>
+<td class="success">0.070s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldFindSingleOwnerWithPet()</td>
-<td class="success">0.011s</td>
+<td class="success">0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldFindVets()</td>
-<td class="success">0.028s</td>
+<td class="success">0.035s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldFindVisitsByPetId()</td>
-<td class="success">0.014s</td>
+<td class="success">0.018s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldInsertOwner()</td>
-<td class="success">0.014s</td>
+<td class="success">0.015s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldInsertPetIntoDatabaseAndGenerateId()</td>
-<td class="success">0.028s</td>
+<td class="success">0.031s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldUpdateOwner()</td>
-<td class="success">0.026s</td>
+<td class="success">0.032s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldUpdatePetName()</td>
-<td class="success">0.018s</td>
+<td class="success">0.022s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -132,8 +132,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2023-03-22T14:12:10.865+09:00  INFO 21436 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.service.ClinicServiceTests]: ClinicServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-03-22T14:12:10.885+09:00  INFO 21436 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.service.ClinicServiceTests
+<pre>2023-03-27T11:00:48.193+09:00  INFO 18144 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.service.ClinicServiceTests]: ClinicServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-03-27T11:00:48.218+09:00  INFO 18144 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.service.ClinicServiceTests
 
 
               |\      _,,,--,,_
@@ -150,18 +150,18 @@
 :: Built with Spring Boot :: 3.0.4
 
 
-2023-03-22T14:12:10.916+09:00  INFO 21436 --- [    Test worker] o.s.s.p.service.ClinicServiceTests       : Starting ClinicServiceTests using Java 17.0.6 with PID 21436 (started by MZC01-MINSEO_KIM89 in D:\USB\Git\SpringBootCICDforAzure\spring-petclinic)
-2023-03-22T14:12:10.916+09:00  INFO 21436 --- [    Test worker] o.s.s.p.service.ClinicServiceTests       : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-03-22T14:12:11.032+09:00  INFO 21436 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-22T14:12:11.053+09:00  INFO 21436 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
-2023-03-22T14:12:11.089+09:00  INFO 21436 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2023-03-22T14:12:11.093+09:00  INFO 21436 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:3cb5b37d-81c4-4b8f-a791-6af0aaf1d552 user=SA
-2023-03-22T14:12:11.094+09:00  INFO 21436 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2023-03-22T14:12:11.143+09:00  INFO 21436 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-22T14:12:11.155+09:00  INFO 21436 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-22T14:12:11.267+09:00  INFO 21436 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-22T14:12:11.267+09:00  INFO 21436 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-22T14:12:11.331+09:00  INFO 21436 --- [    Test worker] o.s.s.p.service.ClinicServiceTests       : Started ClinicServiceTests in 0.443 seconds (process running for 14.968)
+2023-03-27T11:00:48.252+09:00  INFO 18144 --- [    Test worker] o.s.s.p.service.ClinicServiceTests       : Starting ClinicServiceTests using Java 17.0.6 with PID 18144 (started by MZC01-MINSEO_KIM89 in D:\USB\Git\SpringBootCICDforAzure\spring-petclinic)
+2023-03-27T11:00:48.253+09:00  INFO 18144 --- [    Test worker] o.s.s.p.service.ClinicServiceTests       : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-03-27T11:00:48.388+09:00  INFO 18144 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-27T11:00:48.412+09:00  INFO 18144 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-03-27T11:00:48.450+09:00  INFO 18144 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-03-27T11:00:48.455+09:00  INFO 18144 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:1c8eb14e-5063-48f6-bc43-d76536cfd184 user=SA
+2023-03-27T11:00:48.455+09:00  INFO 18144 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-03-27T11:00:48.504+09:00  INFO 18144 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-27T11:00:48.520+09:00  INFO 18144 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-27T11:00:48.664+09:00  INFO 18144 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-27T11:00:48.665+09:00  INFO 18144 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27T11:00:48.741+09:00  INFO 18144 --- [    Test worker] o.s.s.p.service.ClinicServiceTests       : Started ClinicServiceTests in 0.52 seconds (process running for 15.282)
 Hibernate: select v1_0.id,v1_0.first_name,v1_0.last_name from vets v1_0
 Hibernate: select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id=?
 Hibernate: select s1_0.vet_id,s1_1.id,s1_1.name from vet_specialties s1_0 join specialties s1_1 on s1_1.id=s1_0.specialty_id where s1_0.vet_id=?
@@ -220,7 +220,7 @@ Hibernate: select p1_0.id,p1_0.name from types p1_0 order by p1_0.name
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6.1</a> at 2023. 3. 22. 오후 2:12:14</p>
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 2023. 3. 27. 오전 11:00:51</p>
 </div>
 </div>
 </body>

@@ -94,11 +94,11 @@ public class ClinicServiceTests__TestContext005_BeanFactoryRegistrations {
     beanFactory.registerBeanDefinition("org.springframework.data.jpa.util.JpaMetamodelCacheCleanup", JpaMetamodelCacheCleanup__TestContext005_BeanDefinitions.getJpaMetamodelCacheCleanupBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension", JpaEvaluationContextExtension__TestContext005_BeanDefinitions.getJpaEvaluationContextExtensionBeanDefinition());
     beanFactory.registerBeanDefinition("jpa.named-queries#0", PropertiesBasedNamedQueries__TestContext005_BeanDefinitions.getNamedqueriesBeanDefinition());
-    beanFactory.registerBeanDefinition("jpa.VetRepository.fragments#0", RepositoryComposition__TestContext005_BeanDefinitions.RepositoryFragments__BeanDefinitions.getFragmentsBeanDefinition());
-    beanFactory.registerBeanDefinition("vetRepository", VetRepository__TestContext005_BeanDefinitions.getVetRepositoryBeanDefinition());
-    beanFactory.registerBeanDefinition("jpa.named-queries#1", PropertiesBasedNamedQueries__TestContext005_BeanDefinitions.getNamedqueriesBeanDefinition1());
-    beanFactory.registerBeanDefinition("jpa.OwnerRepository.fragments#0", RepositoryComposition__TestContext005_BeanDefinitions.RepositoryFragments__BeanDefinitions.getFragmentsBeanDefinition1());
+    beanFactory.registerBeanDefinition("jpa.OwnerRepository.fragments#0", RepositoryComposition__TestContext005_BeanDefinitions.RepositoryFragments__BeanDefinitions.getFragmentsBeanDefinition());
     beanFactory.registerBeanDefinition("ownerRepository", OwnerRepository__TestContext005_BeanDefinitions.getOwnerRepositoryBeanDefinition());
+    beanFactory.registerBeanDefinition("jpa.named-queries#1", PropertiesBasedNamedQueries__TestContext005_BeanDefinitions.getNamedqueriesBeanDefinition1());
+    beanFactory.registerBeanDefinition("jpa.VetRepository.fragments#0", RepositoryComposition__TestContext005_BeanDefinitions.RepositoryFragments__BeanDefinitions.getFragmentsBeanDefinition1());
+    beanFactory.registerBeanDefinition("vetRepository", VetRepository__TestContext005_BeanDefinitions.getVetRepositoryBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration", JdbcTemplateConfiguration__TestContext005_BeanDefinitions.getJdbcTemplateConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("jdbcTemplate", JdbcTemplateConfiguration__TestContext005_BeanDefinitions.getJdbcTemplateBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration", NamedParameterJdbcTemplateConfiguration__TestContext005_BeanDefinitions.getNamedParameterJdbcTemplateConfigurationBeanDefinition());

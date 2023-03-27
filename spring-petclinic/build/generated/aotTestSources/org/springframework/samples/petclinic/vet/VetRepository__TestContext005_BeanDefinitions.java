@@ -9,8 +9,8 @@ import org.springframework.beans.factory.support.InstanceSupplier;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.core.ResolvableType;
 import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean;
-import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean__TestContext005_Autowiring;
-import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean__TestContext005_PersistenceInjection;
+import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean__TestContext005_Autowiring1;
+import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean__TestContext005_PersistenceInjection1;
 import org.springframework.data.repository.query.QueryLookupStrategy;
 
 /**
@@ -35,7 +35,7 @@ public class VetRepository__TestContext005_BeanDefinitions {
     beanDefinition.getConstructorArgumentValues().addIndexedArgumentValue(0, "org.springframework.samples.petclinic.vet.VetRepository");
     beanDefinition.getPropertyValues().addPropertyValue("queryLookupStrategyKey", QueryLookupStrategy.Key.CREATE_IF_NOT_FOUND);
     beanDefinition.getPropertyValues().addPropertyValue("lazyInit", false);
-    beanDefinition.getPropertyValues().addPropertyValue("namedQueries", new RuntimeBeanReference("jpa.named-queries#0"));
+    beanDefinition.getPropertyValues().addPropertyValue("namedQueries", new RuntimeBeanReference("jpa.named-queries#1"));
     beanDefinition.getPropertyValues().addPropertyValue("repositoryFragments", new RuntimeBeanReference("jpa.VetRepository.fragments#0"));
     beanDefinition.getPropertyValues().addPropertyValue("transactionManager", "transactionManager");
     beanDefinition.getPropertyValues().addPropertyValue("entityManager", new RuntimeBeanReference("jpaSharedEM_entityManagerFactory"));
@@ -43,8 +43,8 @@ public class VetRepository__TestContext005_BeanDefinitions {
     beanDefinition.getPropertyValues().addPropertyValue("mappingContext", new RuntimeBeanReference("jpaMappingContext"));
     beanDefinition.getPropertyValues().addPropertyValue("enableDefaultTransactions", true);
     InstanceSupplier<JpaRepositoryFactoryBean> instanceSupplier = getVetRepositoryInstanceSupplier();
-    instanceSupplier = instanceSupplier.andThen(JpaRepositoryFactoryBean__TestContext005_PersistenceInjection::apply);
-    instanceSupplier = instanceSupplier.andThen(JpaRepositoryFactoryBean__TestContext005_Autowiring::apply);
+    instanceSupplier = instanceSupplier.andThen(JpaRepositoryFactoryBean__TestContext005_PersistenceInjection1::apply);
+    instanceSupplier = instanceSupplier.andThen(JpaRepositoryFactoryBean__TestContext005_Autowiring1::apply);
     beanDefinition.setInstanceSupplier(instanceSupplier);
     return beanDefinition;
   }
