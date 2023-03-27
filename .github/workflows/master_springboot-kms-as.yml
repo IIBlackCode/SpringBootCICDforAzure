@@ -64,7 +64,11 @@ jobs:
         with:
           name: app
           path: '${{ github.workspace }}/spring-petclinic/build_JAR/*.jar'
-
+      
+      # 배포할 파일의 경로를 확인
+      - name: Check build artifacts
+        run: ls -R '${{ github.workspace }}/spring-petclinic/build_JAR/
+      
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
@@ -72,4 +76,5 @@ jobs:
           app-name: 'springboot-kms-as'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DEE043EF871C4A8799F949DD98B877E9 }}
-          package: '${{ github.workspace }}/spring-petclinic/build_JAR/spring-petclinic-*.jar'
+          # package: '${{ github.workspace }}/spring-petclinic/build_JAR/spring-petclinic-*.jar'
+          package: '${{ github.workspace }}/spring-petclinic/build_JAR/spring-petclinic-3.0.0-plain2.jar'
