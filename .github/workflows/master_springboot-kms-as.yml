@@ -72,4 +72,4 @@ jobs:
           app-name: 'springboot-kms-as'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DEE043EF871C4A8799F949DD98B877E9 }}
-          package: '*.jar'
+          package: '${{ github.workspace }}/spring-petclinic/spring-petclinic/*.jar'
